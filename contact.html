@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vithean Store - Contact</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('/img/background1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin-top: 155px;
+      color: #333;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(117, 120, 119, 0.69);
+      z-index: 1000;
+    }
+
+    .navbar h1 {
+      height: 100px;
+      background-color: #ffffff25;
+      color: #fff;
+      font-size: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: color 0.3s;
+    }
+
+    .navbar h1:hover {
+      color: #000;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      background-color: rgba(117, 120, 119, 0.69);
+    }
+
+    .nav-links a {
+      color: aliceblue;
+      margin: 0 15px;
+      font-size: 23px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+      font-size: 27px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .nav-links a.home-icon {
+      color: aqua;
+      font-size: 39px;
+    }
+
+    .contact-us-section {
+      max-width: 600px;
+      margin: 60px auto;
+      margin-top: 180px;
+      padding: 30px 20px;
+      background: rgba(249, 249, 249, 0.45);
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(134, 134, 134, 0.1);
+    }
+
+    .contact-us-section h2 {
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: 2rem;
+    }
+
+    .contact-us-section p {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #000000;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-form label {
+      font-weight: 600;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1.5px solid #8d8b8b;
+      border-radius: 8px;
+      font-size: 1rem;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #657483;
+      outline: none;
+    }
+
+    .contact-form button {
+      padding: 14px;
+      background-color: #50a0f5;
+      color: white;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #33373b;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>Vithean Store</h1>
+    <nav class="nav-links">
+      <a class="home-icon" href="/index.html"><i class='bx bx-home'></i></a>
+      <a href="/asus.html">ASUS ROG</a>
+      <a href="/tuf.html">TUF Gaming</a>
+      <a href="/msi.html">MSI</a>
+      <a href="/mac.html">MACBOOK</a>
+      <a href="/pc.html">PC Build</a>
+      <a href="/monitor.html">Monitor</a>
+      <a href="/gd.html">Graphic Card</a>
+      <a href="/ar.html">Accessories</a>
+      <a href="/contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-us-section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to get in touch? Fill out the form below and we'll respond as soon as possible.</p>
+      <form action="/index.html" method="POST" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

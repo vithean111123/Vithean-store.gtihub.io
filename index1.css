@@ -1,0 +1,106 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      width: 100%;
+      height: 100px;
+      background-color: #ffffff3d;
+      color: rgb(255, 255, 255);
+      font-size: 55px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1:hover {
+      color: rgb(0, 0, 0);
+    }
+
+    body {
+      background: url('/img/rogbackg.png');
+      background-size: 100%;
+      background-attachment: fixed;
+      margin-top: 155px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(117, 120, 119, 0.69); /* same as link background */
+        z-index: 1000;
+    }
+    a {
+      color: aliceblue;
+      font-size: 19px;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: rgb(212, 220, 65);
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .link {
+      width: 100%;
+      height: 60px;
+      background-color: rgba(64, 64, 64, 0.509);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+      padding: 20px;
+    }
+
+    .product {
+      width: 240px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      margin: 15px;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .product:hover {
+      box-shadow: 0 0 25px rgb(235, 235, 235);
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: rgb(254, 5, 5);
+    }
+
+    .product p {
+      font-size: 18px;
+      margin-top: 5px;
+      color: #e0e0e0;
+    }

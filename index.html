@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Vithean Store</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(117, 120, 119, 0.69); /* same as link background */
+        z-index: 1000;
+    }
+    h1{
+        width: 100%;
+        height: 100px;
+        background-color: #ffffff25;
+        color: rgb(255, 255, 255);
+        font-size: 55px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1:hover{
+        color: rgb(0, 0, 0);
+    }
+    body{
+        font-family: Arial, sans-serif;
+        background:url('/img/background1.jpg');
+        background-attachment: fixed;
+        margin-top: 155px;
+    }
+    .link{
+        width: 100%;
+        height: 60px;
+        background-color: rgba(117, 120, 119, 0.69);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .link a{
+        color: aliceblue;
+        margin-left: 20px;
+        margin: 0 15px;
+        font-size: 23px;
+        text-decoration: none;
+    }
+    .link a:hover{
+        color: rgb(204, 239, 27);
+        font-size: 27px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .all-product{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .product{
+        margin: 28px;
+        margin-top: 35px;
+        background-color: rgba(56, 56, 56, 0);
+        width: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+        height: 300px;
+        border: 3px solid ease;
+        border-radius: 1rem;
+        transition: box-shadow 0.3s ease;
+    }
+    .pro img{
+        width: 190px;
+        
+    }
+    .product:hover{
+        box-shadow: 0 16px 32px rgb(183, 183, 183);
+    }
+    .all-product .product .pro img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding: 25px 0;
+        background-color: rgba(0, 0, 0, 0.44);
+    }
+    .footer .social{
+        text-align: center ;
+        padding-bottom: 25px;
+        color:rgb(255, 255, 255);
+    }
+    .footer .social a{
+        font-size: 25px;
+        color:rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 10px;
+        transition: 0.3s ease-in-out;
+
+    }
+    .footer .social a:hover{
+        transform: scale(1.2)translateY(-10px);
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        box-shadow: 0 0 25px rgb(139, 139, 139);
+    }
+    h4{
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="navbar" >
+        <h1 align="center">Vithean Store</h1>
+        <hr>
+        <div class="link">
+            <a style="color: aqua;font-size:39px;" href="/index.html"><i class='bx bx-home'></i></a>
+            <a href="/asus.html">ASUS ROG</a>
+            <a href="/tuf.html">TUF Gamming</a>
+            <a href="/msi.html">MSI</a>
+            <a href="/mac.html">MACBOOK</a>
+            <a href="/pc.html">PC Bulid</a>
+            <a href="/monitor.html">Monitor</a>
+            <a href="/gd.html">Graphic Card</a>
+            <a href="/ar.html">Asessories Computer</a>
+            <a href="/charger.html">Charger</a>
+            <a href="/contact.html" id="#contact">Contact Us</a>
+        </div>
+    </div>
+    <div class="all-product">
+        <div class="product">
+            <div class="pro">
+                <a href="/asus.html">
+                    <img src="/img/logo rog2.1.png" title="ROG" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/tuf.html">
+                    <img src="/img/logo tuf.png" title="Tuf Gamming" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/msi.html">
+                    <img src="/img/msi.png" title="MSI" alt="">
+                </a>
+            </div>
+            
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/mac.html">
+                    <img src="/img/maclogo.png" title="Macbook" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/pc.html">
+                    <img src="/img/case.png" title="Build PC" alt="">
+                </a>
+            </div>
+            
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/monitor.html">
+                    <img src="/img/monitor1.png" title="Rog Monitor" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="all-product">
+        <div class="product">
+            <div class="pro">
+                <a href="/gd.html">
+                    <img src="/img/grphic card.png" title="RTX 4060" alt="">
+                </a>
+            </div>
+            
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/mouse.html">
+                    <img src="/img/mouse.png" title="Mouse" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/key.html">
+                    <img src="/img/key.png" title="Keybaord" alt="">
+                </a>
+            </div>
+            
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/speaker.html">
+                    <img src="/img/speaker.png" title="Speaker" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/hd.html">
+                    <img src="/img/handphones.png" title="Headphones" alt="">
+                </a>
+            </div>
+            
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/charger.html">
+                    <img src="/img/charger.png" title="Charger" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="all-product">
+        <div class="product">
+            <div class="pro">
+                <a href="/webcam.html">
+                    <img src="/img/webcam.png" title="Webcam" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/mousepad.html">
+                    <img src="/img/mousepad1.png" title="Mousepads" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="pro">
+                <a href="/computerstand.html">
+                    <img src="/img/standlaptop.png" title="Stands">
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="#contact">
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/ethanthean17"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/accounts/settings/v2/your_account/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://t.me/theavithean"><i class='bx bxl-telegram' ></i></a>
+            <a href="https://x.com/home"><i class='bx bx-x'></i></a>
+        </div>
+        <h4>©Vithean Store | @theavithean</h4>
+     </footer>
+</body>
+</html>
